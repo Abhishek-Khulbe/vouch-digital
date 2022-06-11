@@ -1,0 +1,60 @@
+* {
+  font-family: "Inter", sans-serif;
+  color: rgb(2 48 71);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 93vh;
+  position: relative;
+}
+
+.login {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  align-self: center;
+  justify-self: center;
+}
+
+.login p {
+  color: gray;
+  font-size: 15px;
+}
+
+.photo {
+  grid-column-start: 3;
+  grid-column-end: span 3;
+  background-color: rgb(2 48 71);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+label {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.forgot-password {
+  font-size: 10px;
+  border: none;
+  background: none;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 870px) {
+  .photo {
+    display: none;
+  }
+
+  .login {
+    grid-column-start: 1;
+    grid-column-end: span 5;
+  }
+}

@@ -1,0 +1,48 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 7vh;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  margin-left: 5rem;
+  color: rgb(4, 52, 84);
+}
+
+.navbar-brand span {
+  font-weight: 700;
+  color: #fcae1e;
+}
+
+.btnContainer {
+  position: absolute;
+  right: 5rem;
+}
+
+.btnContainer Button {
+  font-weight: 700;
+  font-size: 10px;
+  color: white;
+  margin: 5px;
+  width: 10rem;
+  height: 2rem;
+  border: none;
+}
+
+.btn-primary {
+  background-color: rgb(4, 52, 84);
+}
+
+.btn-secondary {
+  background-color: #fcae1e;
+}
+
+@media screen and (max-width: 870px) {
+  .btnContainer {
+    display: none;
+  }
+}
